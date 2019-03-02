@@ -1,63 +1,371 @@
 # GitGIFs
 
-As major percentage of work is being done using Git workflow and which is increasing further, gitgifs should be a useful guide or the best and easiest you can find on internet.
-
 Commands implemented (order based on complexity)
 - [ ] `git init`
+    - `git init --q`
+    - `git init --template`
+    - `git init --separate-git-dir<git dir>`
+    - `git --shared[=(false|true|umask|group|all|world|everybody|0xxx)]`
+    - `git init unmask`
 - [ ] `git clone`
+    - `git clone --template=<template_directory>`
+    - `git clone -o <name>`
+    - `git clone[-b <name>`
+    - `git clone -u <upload-pack>`
+    - `git clone --dissociate`
+    - `git clone --separate-git-dir <git dir>`
 - [ ] `git help`
+    - `git help --all`
+    - `git help --[no-]verbose]`
+    - `git help --guide`
+    - `git help --info`
+    - `git help --man`
+    - `git help --web`
 - [ ] `git diff` with params
-- [ ] `git difftool` with params
+    - `git diff --patch`
+    - `git diff --patch-with-raw`
+    - `git diff --indent-heuristic`
+    - `git diff --no-indent-heuristic`
+    - `git diff --minimal`
+    - `git diff --histogram`
+    - `git --diff-algorithm={patience|minimal|histogram|myers}`
+    - `git diff --compact-summary`
+    - `git diff --shortstat`
+    - `git diff --numstat`
+    - `git diff summary`
+    - `git diff --color[=<when>]`
+    - `git diff no`
+    - `git diff default`
+    - `git diff --ignore-space-at-eol`
+    - `git diff function-context`
+    - `git diff --ignore-blank-lines`
+- [ ] `git difftool`
 - [ ] `git clean` with params
+    - `git clean -d`
+    - `git clean --force`
+    - `git clean --interactive`
+    - `git clean quiet`
+    - `git clean --dry-run`
+    - `git clean --exclude=<pattern>`
+    - `git clean -x`
 - [ ] `git rm` with params
+    - `git rm -f`
+    - `git rm --cached`
+    - `git rm --quiet`
 - [ ] `git mv` with params
+    - `git mv -f`
+    - `git rm -k`
+    - `git rm --dry-run`
+    - `git rm --verbose`
 - [ ] `git pull` with params
+    - `git pull --quiet`
+    - `git pull --verbose`
+    - `git pull --commit`
+    - `git pull --no-commit`
+    - `git pull --log`
+    - `git pull --no-log`
+    - `git pull stat`
+    - `git pull --no-stat`
+    - `git pull --squash`
+    - `git pull --no-squash`
+    - `git pull --summary`
+    - `git pull --no-summary`
+    - `git pull --append`
+    - `git pull --update-shallow`
+    - `git pull --keep`
+    - `git pull --ipv4`
+    - `git pull --ipv6`
 - [ ] `git bundle` with params
+    - `git bundle create`
+    - `git bundle	unbundle`
 - [ ] `git add` with params
+    - `git add --verbose`
+    - `git add --force`
+    - `git add --interactive`
+    - `git add --update`
+    - `git add --chmod=(+|-)x`
+    - `git add --ignore-errors`
 - [ ] `git commit` with params
+    - `git commit --patch`
+    - `git commit --all`
+    - `git commit --reuse-message=<commit>`
+    - `git commit --fixup=<commit>`
+    - `git commit --squash=<commit>`
+    - `git commit --short`
+    - `git commit --branch`
+    - `git commit --long`
+    - `git commit --null`
+    - `git commit --porcelain`
+    - `git commit --author=<author>`
+    - `git commit --message=<msg>`
+    - `git commit --date=<date>`
+    - `git commit --allow-empty`
+    - `git commit --amend`
+    - `git commit --only`
+    - `git commit --quiet`
+    - `git commit --status`
 - [ ] `git status`
+    - `git status --short`
+    - `git status --branch`
+    - `git status --show-stash`
+    - `git status --long`
+    - `git status --verbose`
 - [ ] `git merge` with params
+    - `git merge --stat`
+    - `git merge --no-commit`
+    - `git merge --squash`
+    - `git merge --abort`
+    - `git merge --continue`
 - [ ] `git checkout` with params
+    - `git checkout <branch>`
+    - `git checkout --detach [<branch>]`
+    - `git checkout [--detach] <commit>`
+    - `git checkout --quiet`
 - [ ] `git reset` with params
+    - `git reset [<mode>] [<commit>]`
+    - `git reset --soft`
+    - `git reset --mixed`
+    - `git reset --hard`
+    - `git reset --merge`
+    - `git reset --keep`
 - [ ] `git remote` with params
+    - `git remote [-v | --verbose]`
+    - `git remote rename <old> <new>`
+    - `git remote remove <name>`
+    - `git remote set-head <name> (--delete | <branch>)`
+    - `git remote get-url [--push] [--all] <name>`
+    - `git remote set-url [--push] <name> <newurl> [<oldurl>]`
+    - `git remote set-url --add [--push] <name> <newurl>`
+    - `git remote set-url --delete [--push] <name> <url>`
+    - `git remote prune [-n | --dry-run] <name>…​`
 - [ ] `git fetch` with params
+    - `git fetch [<options>] <group>`
+    - `git fetch --all [<options>]`
+    - `git fetch --shallow-since=<date>`
+    - `git fetch --shallow-exclude=<revision>`
+    - `git fetch --prune-tags`
+    - `git fetch --quiet`
+    - `git fetch --verbose`
+    - `git fetch <repository>`
 - [ ] `git archive` with params
+    - `git archive --format=<fmt|zip>`
+    - `git archive --list`
+    - `git archive --verbose`
+    - `git archive --prefix`
+    - `git archive --remote=<repo>`
+    - `git archive --worktree-attributes`
 - [ ] `git shortlog` with params
+    - `git log --pretty=short`
+    - `git shortlog --numbered`
+    - `git shortlog --summary`
+    - `git shortlog --email`
+    - `git shortlog --committer`
 - [ ] `git push` with params
+    - `git push --all`
+    - `git push --prune`
+    - `git push --mirror`
+    - `git push --procelain`
+    - `git push --delete`
+    - `git push --tags`
+    - `git push --follow-tags`
+    - `git push --signed=(true|false|if-asked)`
+    - `git push --quiet`
+    - `git push --verbose`
 - [ ] `git tag` with params
+    - `git tag --annotate`
+    - `git tag --sign`
+    - `git tag --f`
+    - `git tag --delete`
+    - `git tag --num`
+    - `git tag --list`
+    - `git tag --sort=<key>`
+    - `git tag --color[=<cond>]`
+    - `git tag --contains [<commit>]`
+    - `git tag --no-contains [<commit>]`
+    - `git tag --create-reflog`
+    - `git tag commit`
 - [ ] `git show` with params
+    - `git show --abbrev-commit`
+    - `git show --oneline`
+    - `git show --expand-tabs`
+    - `git show --no-expand-tabs`
+    - `git show --notes[=<treeish>]`
+    - `git show --show-signature`
 - [ ] `git describe` with params
+    - `git describe <commit-ish>`
+    - `git describe --all`
+    - `git describe --tags`
+    - `git describe --debug`
+    - `git describe --long`
+    - `git describe --match <pattern>`
+    - `git describe --exclude <pattern>`
+    - `git describe --always`
 - [ ] `git log` with params
-- [ ] `git credential` with params
+    - `git log --follow`
+    - `git log --source`
+    - `git log --full-diff`
+    - `git log --source`
+    - `git log --log-size`
+    - `git log --max-count=<number>`
+    - `git log --author=<pattern>`
+    - `git log --committer=<pattern>`
+    - `git log --grep-reflog=<pattern>`
+    - `git log --grep=<pattern>`
+    - `git log --basic-regexp`
+    - `git log --remove-empty`
+    - `git log --branches[=<pattern>]`
+    - `git log --remotes[=<pattern>]`
+    - `git log --glob=<glob-pattern>`
+    - `git log --reflog`
+    - `git log --bisect`
+    - `git log --stdin`
+    - `git log --sparse`
+    - `git log --full-history`
+    - `git log --notes[=<treeish>]`
+- [ ] `git credential`
 - [ ] `git branch` with params
+    - `git branch --create-reflog`
+    - `git branch -d`
+    - `git branch (--set-upstream-to=<upstream> | -u <upstream>) [<branchname>]`
+    - `git branch --unset-upstream [<branchname>]`
 - [ ] `git mergetool` with params
+    - `git mergetool [--tool=<tool>]`
 - [ ] `git rebase` with params
+    - `git rebase --interactive <options> --exec <cmd> <upstream> <branch>`
+    - `git rebase --interactive <options> --exec <cmd> <root> <branch>`
+    - `git rebase --continue | --skip | --abort | --quit`
 - [ ] `git revert` with params
+    - `git revert --continue`
+    - `git revert --quit`
+    - `git revert --abort`
+    - `git revert <commit>`
 - [ ] `git stash` with params
+    - `git stash list <options>`
+    - `git stash show <stash>`
+    - `git stash drop --quiet <stash>`
+    - `git stash branch <branchname> <stash>`
+    - `git stash clear`
+    - `git stash create <message>`
+    - `git stash store -m|--message <message>`
 - [ ] `git blame` with params
+    - `git log --pretty=oneline -S'blame_usage'`
+    - `git blame -L :<funcname>`
 - [ ] `git config` with params
+    - `git config [<file-option>] [--type=<type>] --add name value`
+    - `git config [<file-option>] --unset name [value_regex]`
+    - `git config [<file-option>] --get-color name [default]`
 - [ ] `git grep` with params
+    - `git grep grep.lineNumber`
+    - `git grep grep.column`
+    - `git grep grep.patternType`
+    - `git grep grep.extendedRegexp`
+    - `git grep --quiet`
+    - `git grep --all-match -e NODE -e`
+    - `git grep 'time_t' -- regex`
 - [ ] `git filter` with params
 - [ ] `git cat-file` with params
+    - `git cat-file -t -s`
+    - `git cat-file --batch`
 - [ ] `git ls-tree` with params
 - [ ] `git bissect` with params
+    - `git bisect reset [<commit>]`
+    - `git bisect log`
+    - `git bisect help`
+    - `git bisect run <cmd>`
+    - `git bisect skip [(<rev>)]`
+    - `git bisect bad`
+    - `git bisect good tag`
 - [ ] `git cherry-pick` with params
+    - `git cherry-pick --continue`
+    - `git cherry-pick --quit`
+    - `git cherry-pick --abort`
+    - `git cherry-pick <commit>`
 - [ ] `git am` with params
+    - `git am <mbox>`
+    - `git am --signoff`
+    - `git am --message-id`
+    - `git am --quiet`
+    - `git am --whitespace=<option>`
+    - `git am --abort`
+    - `git am --show-current-patch`
 - [ ] `git format-patch` with params
+    - `git format-patch --indent-heuristic`
+    - `git format-patch --minimal`
+    - `git format-patch --histogram`
+    - `git format-patch --diff-algorithm={patience|minimal|histogram|myers}`    - `git format-patch --compact-summary`
+    - `git format-patch --shortstat`
+    - `git format-patch --function-context`
+    - `git format-patch --base=<commit>`
 - [ ] `git send-email` with params
+    - `git send-email --dump-aliases`
+    - `git send-email --annotate`
+    - `git send-email --bcc=<address>`
+    - `git send-email --cc=<address>`
+    - `git send-email --from=<address>`
+    - `git send-email --reply-to=<address>`
+    - `git send-email --in-reply-to=<identifier>`
+    - `git send-email --subject=<string>`
+    - `git send-email --to=<address>`
+    - `git send-email --compose-encoding=<encoding>`
+    - `git send-email --transfer-encoding=(7bit|8bit|quoted-printable|base64|auto)`
+    - `git send-email --envelope-sender=<address>`
+    - `git send-email --smtp-encryption=<encryption>`
+    - `git send-email --smtp-pass[=<password>]`
+    - `git send-email --smtp-ssl-cert-path`
+    - `git send-email --smtp-user=<user>`
+    - `git send-email --batch-size=<num>`
+    - `git send-email --identity=<identity>`
 - [ ] `git request-pull` with params
+    - `git request-pull [-p] <start> <url> [<end>]`
 - [ ] `git reflog` with params
+    - `git reflog [show] [log-options] [<ref>]`
+    - `git reflog exists <ref>`
+    - `git reflog --expire-unreachable=<time>`
 - [ ] `git daemon`
+    - `git daemon --base-path=<path>`
+    - `git daemon --interpolated-path=<pathtemplate>`
+    - `git daemon --log-destination=<destination>`
+    - `git daemon --user-path=<path>`
+    - `git daemon --allow-override=<service>`
 - [ ] `git check-ignore`
+    - `git check-ignore [<options>] <pathname>`
+    - `git check-ignore [<options>] --stdin`
 - [ ] `git commit-tree`
+    - `git commit-tree <tree>`
+    - `git commit-tree <keyid>`
 - [ ] `git count-objects`
+    - `git count-objects [-v] [-H | --human-readable]`
 - [ ] `git diff-index`
+    - `git diff-index -m --cached <tree-ish>`
 - [ ] `git hash-object`
 - [ ] `git read-tree`
+    - `git read-tree --prefix=<prefix>`
+    - `git read-tree --index-output=<file>`
+    - `git read-tree --exclude-per-directory=<gitignore>`
 - [ ] `git rev parse`
+    - `git rev-parse [<options>] <args>`
+    - `git rev-parse --prefix <arg>`
+    - `git rev-parse --short[=length]`
 - [ ] `git symbolic-ref`
+    - `git symbolic-ref --delete [-q] <name>`
+    - `git symbolic-ref [-q] [--short] <name>`
+    - `git symbolic-ref [-m <reason>] <name> <ref>`
+    - `git symbolic-ref --quiet`
 - [ ] `git write-tree`
+    - `git write-tree --missing-ok`
+    - `git write-tree --prefix=<prefix>`
 - [ ] `./git` directory
+    - `config`
+    - `index`
+    - `objects`
+    - `HEAD`
+    - `description
+    - `info`
+    - `packed-refs`
+    - `branches`
+    - `hooks`
+    - `logs`
+    - `refs`
 
 Idea credit : [vimgifs](https://vimgifs.com/).
 
