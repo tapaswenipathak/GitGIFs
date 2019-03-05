@@ -367,5 +367,8 @@ Commands implemented (order based on complexity)
     - `logs`
     - `refs`
 
-Idea credit : [vimgifs](https://vimgifs.com/).
+## Contributing
 
+All Git commands listed are present as GIFs in `gitgifs/static/gifs/<command-name>.gif`. Please feel free to make a pull request with the GIFs for any of the listed command.
+
+Idea credit : [vimgifs](https://vimgifs.com/).
