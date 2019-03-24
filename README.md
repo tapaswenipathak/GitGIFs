@@ -359,7 +359,7 @@ Commands implemented (order based on complexity)
     - `index`
     - `objects`
     - `HEAD`
-    - `description
+    - `description`
     - `info`
     - `packed-refs`
     - `branches`
