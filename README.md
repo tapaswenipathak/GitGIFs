@@ -1,5 +1,11 @@
 # GitGIFs
 
+![](https://img.shields.io/github/issues/tapaswenipathak/GitGIFs.svg)
+![](https://img.shields.io/github/forks/tapaswenipathak/GitGIFs.svg)
+![](https://img.shields.io/github/stars/tapaswenipathak/GitGIFs.svg)
+![](https://img.shields.io/github/license/tapaswenipathak/GitGIFs.svg)
+![](https://img.shields.io/twitter/url/https/github.com/tapaswenipathak/GitGIFs.svg?label=Learn%20Git%20using%20GIF)
+
 Commands implemented (order based on complexity)
 - [ ] `git init`
     - `git init --q`
